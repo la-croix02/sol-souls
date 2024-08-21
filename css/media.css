@@ -1,0 +1,371 @@
+@media (max-width: 1200px) {
+    .intro::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+    }
+
+    .about__items {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .about__item {
+        max-width: unset;
+        width: calc(50% - 15px);
+    }
+
+    .nft-about__inner {
+        align-items: flex-start;
+    }
+
+    .nft-roadmap__inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .questions__inner-left,
+    .questions__inner-right {
+        width: 45%;
+    }
+
+    .road__content {
+        grid-template-columns: 400px 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__btn {
+        order: 1;
+    }
+
+    .header__burger {
+        display: block;
+        order: 2;
+        z-index: 100;
+    }
+
+    .header__list {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(21, 21, 21, 0.8);
+        backdrop-filter: blur(8px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .4s;
+        z-index: 100;
+    }
+
+    .header__list.active {
+        left: 0;
+    }
+
+    .about__mint {
+        flex-direction: column;
+    }
+
+    .about__mint-img {
+        order: 1;
+    }
+
+    .about__mint-info {
+        padding-left: 21px;
+    }
+
+    .nft-about__inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nft-about__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nft-about__statistics {
+        max-width: 500px;
+    }
+
+    .nft-about__img {
+        display: none;
+    }
+
+    .nft-about__img--mobile {
+        display: block;
+        width: 80%;
+        background: linear-gradient(360deg, #171717 -2.58%, #010101 91.03%);
+        border-radius: 15.4884px;
+        margin: 0 auto 50px;
+    }
+
+    .nft-about__img-info--mobile {
+        padding: 27px;
+    }
+
+    .nft-about__img--mobile img {
+        border-radius: 15.4884px 15.4884px 0 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nft-about__img--mobile h3 {
+        margin-bottom: 14px;
+        padding-left: 33px;
+        background: url('../img/about/knife-icon.svg');
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    .nft-about__img--mobile p {
+        font-family: 'Montserrat';
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .questions__inner {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 35px;
+    }
+    .questions__inner-left,
+    .questions__inner-right {
+        width: 100%;
+    }
+    .road__content {
+        grid-template-columns: 1fr;
+    }
+    .footer__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 34px;
+    }
+    .footer__col {
+        max-width: unset;
+    }
+    .footer__col:first-child {
+        grid-column: 1/-1;
+    }
+    .footer__col:last-child {
+        order: 0;
+    }
+    .footer__col:nth-child(3) {
+        grid-column: 1/-1;
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        background: none;
+    }
+
+    .intro__img-mobile {
+        display: block;
+    }
+
+    .intro__roadmap {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .intro__roadmap-text {
+        max-width: 251px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .intro__roadmap-btn {
+        padding: 12px 23px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .intro__title {
+        font-size: 55px;
+    }
+
+    .about__items {
+        flex-direction: column;
+        align-items: center;
+        gap: 44px;
+    }
+
+    .about__item {
+        width: 100%;
+    }
+
+    .portfolio__title {
+        font-size: 44px;
+    }
+
+    .nft-about__img--mobile {
+        width: 100%;
+    }
+
+    .nft-roadmap__title {
+        font-size: 32px;
+    }
+
+    .nft-roadmap__right p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__title {
+        font-size: 42px;
+    }
+    .intro__info-subtitle {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .intro__info-text {
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .about__info-title {
+        font-size: 32px;
+    }
+
+    .about__info-subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about__details-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__details-subtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .about__details-list-item {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about__details-amount {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 108px;
+        height: 42px;
+    }
+
+    .about__details-btn {
+        padding: 14px 66px;
+    }
+
+    .about__info-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about__details-right {
+        padding-bottom: 10px;
+
+    }
+
+    .portfolio__title {
+        font-size: 32px;
+        line-height: 134%;
+    }
+
+    .nft-about__inner {
+        padding: 25px 20px 50px;
+    }
+
+    .nft-about__info-title {
+        font-size: 32px;
+        line-height: 117.5%;
+    }
+
+    .nft-about__text {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+
+    .nft-about__statistics {
+        gap: 50px;
+    }
+
+    .nft-about__statistics-item span {
+        font-size: 38px;
+        line-height: 26px;
+    }
+
+    .nft-about__statistics-item p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .questions__btn {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .questions__title {
+        font-size: 32px;
+        line-height: 147.5%;
+    }
+    .road__inner {
+        padding: 30px 10px 25px 10px;
+    }
+    .road__title {
+        font-size: 38px;
+    }
+    .road__content-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .intro__info-subtitle {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .intro__info-btn i {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .intro__info-text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .nft-about__info-title {
+        font-size: 25px;
+    }
+    .nft-about__statistics {
+        gap: 20px;
+    }
+    .nft-about__statistics-item span {
+        font-size: 25px;
+        line-height: 26px;
+    }
+}
+
+.media {
+    display: none;
+}
